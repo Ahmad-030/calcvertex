@@ -48,7 +48,7 @@
         <activity android:name=".activities.AgeCalcActivity"        android:exported="false" />
         <activity android:name=".activities.DateDiffActivity"       android:exported="false" />
         <activity android:name=".activities.UnitConverterActivity"  android:exported="false" />
-
+        <activity android:name=".activities.PrivacyPolicyActivity" android:exported="false" />
     </application>
 
 </manifest>

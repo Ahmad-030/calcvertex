@@ -2,10 +2,10 @@ plugins {
     alias(libs.plugins.android.application)
 }
 android {
-    namespace = "com.burgaynet.calcvertex"
+    namespace = "com.tooldynoapps.calcvertex"
     compileSdk = 36
     defaultConfig {
-        applicationId = "com.burgaynet.calcvertex"
+        applicationId = "com.tooldynoapps.calcvertex"
         minSdk = 24
         targetSdk = 36
         versionCode = 1

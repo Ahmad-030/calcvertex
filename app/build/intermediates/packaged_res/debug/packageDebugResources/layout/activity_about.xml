@@ -7,6 +7,7 @@
         android:layout_width="match_parent" android:layout_height="wrap_content"
         android:orientation="vertical" android:padding="24dp">
 
+        <!-- Hero Card -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -29,6 +30,7 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
+        <!-- Developer Card -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent" android:layout_height="wrap_content"
             android:layout_marginBottom="16dp"
@@ -53,11 +55,11 @@
                     <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
                         android:orientation="vertical">
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="Ghulam Qasim"
+                            android:text="ToolDynoApps"
                             android:textSize="16sp" android:textStyle="bold"
                             android:textColor="@color/colorTextPrimary"/>
                         <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
-                            android:text="kingqks8@gmail.com"
+                            android:text="exelsoftware@gmail.com"
                             android:textSize="13sp" android:textColor="@color/colorTeal"
                             android:layout_marginTop="2dp"/>
                     </LinearLayout>
@@ -65,8 +67,10 @@
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 
+        <!-- Features Card -->
         <com.google.android.material.card.MaterialCardView
             android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
             app:cardCornerRadius="20dp" app:cardElevation="0dp"
             app:cardBackgroundColor="#0D00D4AA"
             app:strokeColor="#1A00D4AA" app:strokeWidth="1dp">
@@ -87,6 +91,39 @@
                 <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
                     android:text="🕐  History  (Last 20 results saved)" android:textSize="13sp"
                     android:textColor="@color/colorTextSecondary"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <!-- Privacy Policy Button -->
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/cardPrivacyPolicy"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:clickable="true" android:focusable="true"
+            app:cardCornerRadius="20dp" app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/colorCard"
+            app:strokeColor="@color/colorCardStroke" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:padding="18dp" android:gravity="center_vertical">
+                <LinearLayout android:layout_width="40dp" android:layout_height="40dp"
+                    android:background="@drawable/category_icon_bg"
+                    android:gravity="center" android:layout_marginEnd="14dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🔒" android:textSize="18sp"/>
+                </LinearLayout>
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                    android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Privacy Policy"
+                        android:textSize="15sp" android:textStyle="bold"
+                        android:textColor="@color/colorTextPrimary"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="How we handle your data"
+                        android:textSize="12sp" android:textColor="@color/colorTextSecondary"
+                        android:layout_marginTop="2dp"/>
+                </LinearLayout>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="›" android:textSize="24sp" android:textColor="@color/colorTeal"/>
             </LinearLayout>
         </com.google.android.material.card.MaterialCardView>
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.burgaynet.calcvertex"
+    package="com.tooldynoapps.calcvertex"
     android:versionCode="1"
     android:versionName="1.0" >
 
@@ -9,10 +9,10 @@
         android:targetSdkVersion="36" />
 
     <permission
-        android:name="com.burgaynet.calcvertex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+        android:name="com.tooldynoapps.calcvertex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="com.burgaynet.calcvertex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+    <uses-permission android:name="com.tooldynoapps.calcvertex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
 
     <application
         android:allowBackup="true"
@@ -26,7 +26,7 @@
         android:testOnly="true"
         android:theme="@style/Theme.CalcVertex" >
         <activity
-            android:name="com.burgaynet.calcvertex.activities.SplashActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.SplashActivity"
             android:exported="true"
             android:theme="@style/Theme.CalcVertex.Splash" >
             <intent-filter>
@@ -36,80 +36,83 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.burgaynet.calcvertex.activities.HomeActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.HomeActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.FinanceActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.FinanceActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.HealthActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.HealthActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.MathActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.MathActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.EverydayActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.EverydayActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.HistoryActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.HistoryActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.AboutActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.AboutActivity"
             android:exported="false" />
 
         <!-- Finance calcs -->
         <activity
-            android:name="com.burgaynet.calcvertex.activities.EmiCalcActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.EmiCalcActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.ProfitLossActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.ProfitLossActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.GstCalcActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.GstCalcActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.InterestCalcActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.InterestCalcActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.CurrencyCalcActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.CurrencyCalcActivity"
             android:exported="false" />
 
         <!-- Health calcs -->
         <activity
-            android:name="com.burgaynet.calcvertex.activities.BmiCalcActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.BmiCalcActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.CalorieCalcActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.CalorieCalcActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.WaterCalcActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.WaterCalcActivity"
             android:exported="false" />
 
         <!-- Math calcs -->
         <activity
-            android:name="com.burgaynet.calcvertex.activities.AreaCalcActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.AreaCalcActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.PercentCalcActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.PercentCalcActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.BaseConverterActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.BaseConverterActivity"
             android:exported="false" />
 
         <!-- Everyday calcs -->
         <activity
-            android:name="com.burgaynet.calcvertex.activities.AgeCalcActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.AgeCalcActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.DateDiffActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.DateDiffActivity"
             android:exported="false" />
         <activity
-            android:name="com.burgaynet.calcvertex.activities.UnitConverterActivity"
+            android:name="com.tooldynoapps.calcvertex.activities.UnitConverterActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.tooldynoapps.calcvertex.activities.PrivacyPolicyActivity"
             android:exported="false" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"
-            android:authorities="com.burgaynet.calcvertex.androidx-startup"
+            android:authorities="com.tooldynoapps.calcvertex.androidx-startup"
             android:exported="false" >
             <meta-data
                 android:name="androidx.emoji2.text.EmojiCompatInitializer"
