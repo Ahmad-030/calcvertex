@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+    <LinearLayout android:id="@+id/aboutContainer"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="24dp" app:cardElevation="0dp"
+            app:cardBackgroundColor="#0D1F35"
+            app:strokeColor="@color/colorCardStroke" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="32dp" android:gravity="center">
+                <TextView android:id="@+id/tvHeroIcon"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🔧" android:textSize="64sp" android:layout_marginBottom="16dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="CalcVertex"
+                    android:textSize="30sp" android:textStyle="bold"
+                    android:textColor="@color/colorTextPrimary"
+                    android:letterSpacing="0.04" android:layout_marginBottom="8dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Every Calculator · One App · Offline"
+                    android:textSize="12sp" android:textColor="@color/colorTeal" android:gravity="center"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp" app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/colorCard"
+            app:strokeColor="@color/colorCardStroke" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="22dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Developer"
+                    android:textSize="11sp" android:textColor="@color/colorTextSecondary"
+                    android:textAllCaps="true" android:letterSpacing="0.1"
+                    android:layout_marginBottom="14dp"/>
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical">
+                    <LinearLayout android:layout_width="36dp" android:layout_height="36dp"
+                        android:background="@drawable/category_icon_bg" android:gravity="center"
+                        android:layout_marginEnd="14dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="👤" android:textSize="16sp"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Ghulam Qasim"
+                            android:textSize="16sp" android:textStyle="bold"
+                            android:textColor="@color/colorTextPrimary"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="kingqks8@gmail.com"
+                            android:textSize="13sp" android:textColor="@color/colorTeal"
+                            android:layout_marginTop="2dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            app:cardCornerRadius="20dp" app:cardElevation="0dp"
+            app:cardBackgroundColor="#0D00D4AA"
+            app:strokeColor="#1A00D4AA" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="22dp">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="💰  5 Finance Tools  (EMI, GST, Interest…)" android:textSize="13sp"
+                    android:textColor="@color/colorTeal" android:layout_marginBottom="8dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="❤️  3 Health Tools  (BMI, Calorie, Water)" android:textSize="13sp"
+                    android:textColor="@color/colorRed" android:layout_marginBottom="8dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="📐  3 Math Tools  (Area, %, Base Converter)" android:textSize="13sp"
+                    android:textColor="@color/colorBlue" android:layout_marginBottom="8dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="⚡  3 Everyday Tools  (Age, Date, Unit)" android:textSize="13sp"
+                    android:textColor="@color/colorAmber" android:layout_marginBottom="8dp"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="🕐  History  (Last 20 results saved)" android:textSize="13sp"
+                    android:textColor="@color/colorTextSecondary"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+    </LinearLayout>
+</ScrollView>

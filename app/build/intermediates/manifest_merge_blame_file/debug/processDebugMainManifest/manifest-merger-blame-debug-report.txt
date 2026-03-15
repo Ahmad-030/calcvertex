@@ -1,0 +1,262 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.burgaynet.calcvertex"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="24"
+9        android:targetSdkVersion="36" />
+10
+11    <permission
+11-->[androidx.core:core:1.13.0] C:\Users\amtal\.gradle\caches\8.9\transforms\96ac2b7d1e42fdf6e7b010d75f3ea71b\transformed\core-1.13.0\AndroidManifest.xml:22:5-24:47
+12        android:name="com.burgaynet.calcvertex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
+12-->[androidx.core:core:1.13.0] C:\Users\amtal\.gradle\caches\8.9\transforms\96ac2b7d1e42fdf6e7b010d75f3ea71b\transformed\core-1.13.0\AndroidManifest.xml:23:9-81
+13        android:protectionLevel="signature" />
+13-->[androidx.core:core:1.13.0] C:\Users\amtal\.gradle\caches\8.9\transforms\96ac2b7d1e42fdf6e7b010d75f3ea71b\transformed\core-1.13.0\AndroidManifest.xml:24:9-44
+14
+15    <uses-permission android:name="com.burgaynet.calcvertex.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION" />
+15-->[androidx.core:core:1.13.0] C:\Users\amtal\.gradle\caches\8.9\transforms\96ac2b7d1e42fdf6e7b010d75f3ea71b\transformed\core-1.13.0\AndroidManifest.xml:26:5-97
+15-->[androidx.core:core:1.13.0] C:\Users\amtal\.gradle\caches\8.9\transforms\96ac2b7d1e42fdf6e7b010d75f3ea71b\transformed\core-1.13.0\AndroidManifest.xml:26:22-94
+16
+17    <application
+17-->D:\CalcVertex\app\src\main\AndroidManifest.xml:4:5-52:19
+18        android:allowBackup="true"
+18-->D:\CalcVertex\app\src\main\AndroidManifest.xml:5:9-35
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.13.0] C:\Users\amtal\.gradle\caches\8.9\transforms\96ac2b7d1e42fdf6e7b010d75f3ea71b\transformed\core-1.13.0\AndroidManifest.xml:28:18-86
+20        android:debuggable="true"
+21        android:extractNativeLibs="false"
+22        android:icon="@mipmap/ic_launcher"
+22-->D:\CalcVertex\app\src\main\AndroidManifest.xml:6:9-43
+23        android:label="@string/app_name"
+23-->D:\CalcVertex\app\src\main\AndroidManifest.xml:8:9-41
+24        android:roundIcon="@mipmap/ic_launcher_round"
+24-->D:\CalcVertex\app\src\main\AndroidManifest.xml:7:9-54
+25        android:supportsRtl="true"
+25-->D:\CalcVertex\app\src\main\AndroidManifest.xml:9:9-35
+26        android:testOnly="true"
+27        android:theme="@style/Theme.CalcVertex" >
+27-->D:\CalcVertex\app\src\main\AndroidManifest.xml:10:9-48
+28        <activity
+28-->D:\CalcVertex\app\src\main\AndroidManifest.xml:12:9-20:20
+29            android:name="com.burgaynet.calcvertex.activities.SplashActivity"
+29-->D:\CalcVertex\app\src\main\AndroidManifest.xml:13:13-54
+30            android:exported="true"
+30-->D:\CalcVertex\app\src\main\AndroidManifest.xml:14:13-36
+31            android:theme="@style/Theme.CalcVertex.Splash" >
+31-->D:\CalcVertex\app\src\main\AndroidManifest.xml:15:13-59
+32            <intent-filter>
+32-->D:\CalcVertex\app\src\main\AndroidManifest.xml:16:13-19:29
+33                <action android:name="android.intent.action.MAIN" />
+33-->D:\CalcVertex\app\src\main\AndroidManifest.xml:17:17-69
+33-->D:\CalcVertex\app\src\main\AndroidManifest.xml:17:25-66
+34
+35                <category android:name="android.intent.category.LAUNCHER" />
+35-->D:\CalcVertex\app\src\main\AndroidManifest.xml:18:17-77
+35-->D:\CalcVertex\app\src\main\AndroidManifest.xml:18:27-74
+36            </intent-filter>
+37        </activity>
+38        <activity
+38-->D:\CalcVertex\app\src\main\AndroidManifest.xml:22:9-96
+39            android:name="com.burgaynet.calcvertex.activities.HomeActivity"
+39-->D:\CalcVertex\app\src\main\AndroidManifest.xml:22:19-58
+40            android:exported="false" />
+40-->D:\CalcVertex\app\src\main\AndroidManifest.xml:22:69-93
+41        <activity
+41-->D:\CalcVertex\app\src\main\AndroidManifest.xml:23:9-96
+42            android:name="com.burgaynet.calcvertex.activities.FinanceActivity"
+42-->D:\CalcVertex\app\src\main\AndroidManifest.xml:23:19-61
+43            android:exported="false" />
+43-->D:\CalcVertex\app\src\main\AndroidManifest.xml:23:69-93
+44        <activity
+44-->D:\CalcVertex\app\src\main\AndroidManifest.xml:24:9-96
+45            android:name="com.burgaynet.calcvertex.activities.HealthActivity"
+45-->D:\CalcVertex\app\src\main\AndroidManifest.xml:24:19-60
+46            android:exported="false" />
+46-->D:\CalcVertex\app\src\main\AndroidManifest.xml:24:69-93
+47        <activity
+47-->D:\CalcVertex\app\src\main\AndroidManifest.xml:25:9-96
+48            android:name="com.burgaynet.calcvertex.activities.MathActivity"
+48-->D:\CalcVertex\app\src\main\AndroidManifest.xml:25:19-58
+49            android:exported="false" />
+49-->D:\CalcVertex\app\src\main\AndroidManifest.xml:25:69-93
+50        <activity
+50-->D:\CalcVertex\app\src\main\AndroidManifest.xml:26:9-96
+51            android:name="com.burgaynet.calcvertex.activities.EverydayActivity"
+51-->D:\CalcVertex\app\src\main\AndroidManifest.xml:26:19-62
+52            android:exported="false" />
+52-->D:\CalcVertex\app\src\main\AndroidManifest.xml:26:69-93
+53        <activity
+53-->D:\CalcVertex\app\src\main\AndroidManifest.xml:27:9-96
+54            android:name="com.burgaynet.calcvertex.activities.HistoryActivity"
+54-->D:\CalcVertex\app\src\main\AndroidManifest.xml:27:19-61
+55            android:exported="false" />
+55-->D:\CalcVertex\app\src\main\AndroidManifest.xml:27:69-93
+56        <activity
+56-->D:\CalcVertex\app\src\main\AndroidManifest.xml:28:9-96
+57            android:name="com.burgaynet.calcvertex.activities.AboutActivity"
+57-->D:\CalcVertex\app\src\main\AndroidManifest.xml:28:19-59
+58            android:exported="false" />
+58-->D:\CalcVertex\app\src\main\AndroidManifest.xml:28:69-93
+59
+60        <!-- Finance calcs -->
+61        <activity
+61-->D:\CalcVertex\app\src\main\AndroidManifest.xml:31:9-96
+62            android:name="com.burgaynet.calcvertex.activities.EmiCalcActivity"
+62-->D:\CalcVertex\app\src\main\AndroidManifest.xml:31:19-61
+63            android:exported="false" />
+63-->D:\CalcVertex\app\src\main\AndroidManifest.xml:31:69-93
+64        <activity
+64-->D:\CalcVertex\app\src\main\AndroidManifest.xml:32:9-96
+65            android:name="com.burgaynet.calcvertex.activities.ProfitLossActivity"
+65-->D:\CalcVertex\app\src\main\AndroidManifest.xml:32:19-64
+66            android:exported="false" />
+66-->D:\CalcVertex\app\src\main\AndroidManifest.xml:32:69-93
+67        <activity
+67-->D:\CalcVertex\app\src\main\AndroidManifest.xml:33:9-96
+68            android:name="com.burgaynet.calcvertex.activities.GstCalcActivity"
+68-->D:\CalcVertex\app\src\main\AndroidManifest.xml:33:19-61
+69            android:exported="false" />
+69-->D:\CalcVertex\app\src\main\AndroidManifest.xml:33:69-93
+70        <activity
+70-->D:\CalcVertex\app\src\main\AndroidManifest.xml:34:9-96
+71            android:name="com.burgaynet.calcvertex.activities.InterestCalcActivity"
+71-->D:\CalcVertex\app\src\main\AndroidManifest.xml:34:19-66
+72            android:exported="false" />
+72-->D:\CalcVertex\app\src\main\AndroidManifest.xml:34:69-93
+73        <activity
+73-->D:\CalcVertex\app\src\main\AndroidManifest.xml:35:9-96
+74            android:name="com.burgaynet.calcvertex.activities.CurrencyCalcActivity"
+74-->D:\CalcVertex\app\src\main\AndroidManifest.xml:35:19-66
+75            android:exported="false" />
+75-->D:\CalcVertex\app\src\main\AndroidManifest.xml:35:69-93
+76
+77        <!-- Health calcs -->
+78        <activity
+78-->D:\CalcVertex\app\src\main\AndroidManifest.xml:38:9-96
+79            android:name="com.burgaynet.calcvertex.activities.BmiCalcActivity"
+79-->D:\CalcVertex\app\src\main\AndroidManifest.xml:38:19-61
+80            android:exported="false" />
+80-->D:\CalcVertex\app\src\main\AndroidManifest.xml:38:69-93
+81        <activity
+81-->D:\CalcVertex\app\src\main\AndroidManifest.xml:39:9-96
+82            android:name="com.burgaynet.calcvertex.activities.CalorieCalcActivity"
+82-->D:\CalcVertex\app\src\main\AndroidManifest.xml:39:19-65
+83            android:exported="false" />
+83-->D:\CalcVertex\app\src\main\AndroidManifest.xml:39:69-93
+84        <activity
+84-->D:\CalcVertex\app\src\main\AndroidManifest.xml:40:9-96
+85            android:name="com.burgaynet.calcvertex.activities.WaterCalcActivity"
+85-->D:\CalcVertex\app\src\main\AndroidManifest.xml:40:19-63
+86            android:exported="false" />
+86-->D:\CalcVertex\app\src\main\AndroidManifest.xml:40:69-93
+87
+88        <!-- Math calcs -->
+89        <activity
+89-->D:\CalcVertex\app\src\main\AndroidManifest.xml:43:9-96
+90            android:name="com.burgaynet.calcvertex.activities.AreaCalcActivity"
+90-->D:\CalcVertex\app\src\main\AndroidManifest.xml:43:19-62
+91            android:exported="false" />
+91-->D:\CalcVertex\app\src\main\AndroidManifest.xml:43:69-93
+92        <activity
+92-->D:\CalcVertex\app\src\main\AndroidManifest.xml:44:9-96
+93            android:name="com.burgaynet.calcvertex.activities.PercentCalcActivity"
+93-->D:\CalcVertex\app\src\main\AndroidManifest.xml:44:19-65
+94            android:exported="false" />
+94-->D:\CalcVertex\app\src\main\AndroidManifest.xml:44:69-93
+95        <activity
+95-->D:\CalcVertex\app\src\main\AndroidManifest.xml:45:9-96
+96            android:name="com.burgaynet.calcvertex.activities.BaseConverterActivity"
+96-->D:\CalcVertex\app\src\main\AndroidManifest.xml:45:19-67
+97            android:exported="false" />
+97-->D:\CalcVertex\app\src\main\AndroidManifest.xml:45:69-93
+98
+99        <!-- Everyday calcs -->
+100        <activity
+100-->D:\CalcVertex\app\src\main\AndroidManifest.xml:48:9-96
+101            android:name="com.burgaynet.calcvertex.activities.AgeCalcActivity"
+101-->D:\CalcVertex\app\src\main\AndroidManifest.xml:48:19-61
+102            android:exported="false" />
+102-->D:\CalcVertex\app\src\main\AndroidManifest.xml:48:69-93
+103        <activity
+103-->D:\CalcVertex\app\src\main\AndroidManifest.xml:49:9-96
+104            android:name="com.burgaynet.calcvertex.activities.DateDiffActivity"
+104-->D:\CalcVertex\app\src\main\AndroidManifest.xml:49:19-62
+105            android:exported="false" />
+105-->D:\CalcVertex\app\src\main\AndroidManifest.xml:49:69-93
+106        <activity
+106-->D:\CalcVertex\app\src\main\AndroidManifest.xml:50:9-96
+107            android:name="com.burgaynet.calcvertex.activities.UnitConverterActivity"
+107-->D:\CalcVertex\app\src\main\AndroidManifest.xml:50:19-67
+108            android:exported="false" />
+108-->D:\CalcVertex\app\src\main\AndroidManifest.xml:50:69-93
+109
+110        <provider
+110-->[androidx.emoji2:emoji2:1.3.0] C:\Users\amtal\.gradle\caches\8.9\transforms\afd28143e3d9179d99ddd5e0ef2b2e2c\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:24:9-32:20
+111            android:name="androidx.startup.InitializationProvider"
+111-->[androidx.emoji2:emoji2:1.3.0] C:\Users\amtal\.gradle\caches\8.9\transforms\afd28143e3d9179d99ddd5e0ef2b2e2c\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:25:13-67
+112            android:authorities="com.burgaynet.calcvertex.androidx-startup"
+112-->[androidx.emoji2:emoji2:1.3.0] C:\Users\amtal\.gradle\caches\8.9\transforms\afd28143e3d9179d99ddd5e0ef2b2e2c\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:26:13-68
+113            android:exported="false" >
+113-->[androidx.emoji2:emoji2:1.3.0] C:\Users\amtal\.gradle\caches\8.9\transforms\afd28143e3d9179d99ddd5e0ef2b2e2c\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:27:13-37
+114            <meta-data
+114-->[androidx.emoji2:emoji2:1.3.0] C:\Users\amtal\.gradle\caches\8.9\transforms\afd28143e3d9179d99ddd5e0ef2b2e2c\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:29:13-31:52
+115                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+115-->[androidx.emoji2:emoji2:1.3.0] C:\Users\amtal\.gradle\caches\8.9\transforms\afd28143e3d9179d99ddd5e0ef2b2e2c\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:30:17-75
+116                android:value="androidx.startup" />
+116-->[androidx.emoji2:emoji2:1.3.0] C:\Users\amtal\.gradle\caches\8.9\transforms\afd28143e3d9179d99ddd5e0ef2b2e2c\transformed\jetified-emoji2-1.3.0\AndroidManifest.xml:31:17-49
+117            <meta-data
+117-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\amtal\.gradle\caches\8.9\transforms\0098538ffc4e4a9fe9310f097ba80932\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:29:13-31:52
+118                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+118-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\amtal\.gradle\caches\8.9\transforms\0098538ffc4e4a9fe9310f097ba80932\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:30:17-78
+119                android:value="androidx.startup" />
+119-->[androidx.lifecycle:lifecycle-process:2.6.2] C:\Users\amtal\.gradle\caches\8.9\transforms\0098538ffc4e4a9fe9310f097ba80932\transformed\jetified-lifecycle-process-2.6.2\AndroidManifest.xml:31:17-49
+120            <meta-data
+120-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:29:13-31:52
+121                android:name="androidx.profileinstaller.ProfileInstallerInitializer"
+121-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:30:17-85
+122                android:value="androidx.startup" />
+122-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:31:17-49
+123        </provider>
+124
+125        <receiver
+125-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:34:9-52:20
+126            android:name="androidx.profileinstaller.ProfileInstallReceiver"
+126-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:35:13-76
+127            android:directBootAware="false"
+127-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:36:13-44
+128            android:enabled="true"
+128-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:37:13-35
+129            android:exported="true"
+129-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:38:13-36
+130            android:permission="android.permission.DUMP" >
+130-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:39:13-57
+131            <intent-filter>
+131-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:40:13-42:29
+132                <action android:name="androidx.profileinstaller.action.INSTALL_PROFILE" />
+132-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:17-91
+132-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:41:25-88
+133            </intent-filter>
+134            <intent-filter>
+134-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:43:13-45:29
+135                <action android:name="androidx.profileinstaller.action.SKIP_FILE" />
+135-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:17-85
+135-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:44:25-82
+136            </intent-filter>
+137            <intent-filter>
+137-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:46:13-48:29
+138                <action android:name="androidx.profileinstaller.action.SAVE_PROFILE" />
+138-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:17-88
+138-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:47:25-85
+139            </intent-filter>
+140            <intent-filter>
+140-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:49:13-51:29
+141                <action android:name="androidx.profileinstaller.action.BENCHMARK_OPERATION" />
+141-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:17-95
+141-->[androidx.profileinstaller:profileinstaller:1.4.0] C:\Users\amtal\.gradle\caches\8.9\transforms\4af1214a9f066706e1d036d6529d9dcb\transformed\jetified-profileinstaller-1.4.0\AndroidManifest.xml:50:25-92
+142            </intent-filter>
+143        </receiver>
+144    </application>
+145
+146</manifest>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+    <LinearLayout android:id="@+id/calcContainer"
+        android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp" app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/colorCard"
+            app:strokeColor="@color/colorCardStroke" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:padding="20dp" android:gravity="center_vertical">
+                <TextView android:id="@+id/tvCalcEmoji" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="📏" android:textSize="32sp"
+                    android:layout_marginEnd="14dp"/>
+                <TextView android:id="@+id/tvCalcTitle" android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" android:text="Unit Converter"
+                    android:textSize="20sp" android:textStyle="bold" android:textColor="@color/colorAmber"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp" app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/colorCard"
+            app:strokeColor="@color/colorCardStroke" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Category" android:textSize="11sp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textAllCaps="true" android:letterSpacing="0.08"
+                    android:layout_marginBottom="6dp"/>
+                <Spinner android:id="@+id/spinnerCategory"
+                    android:layout_width="match_parent" android:layout_height="52dp"
+                    android:background="@drawable/spinner_bg"
+                    android:paddingStart="14dp" android:paddingEnd="14dp"
+                    android:layout_marginBottom="16dp"/>
+
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:layout_marginBottom="14dp">
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical"
+                        android:layout_marginEnd="8dp">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="From" android:textSize="11sp"
+                            android:textColor="@color/colorTextSecondary"
+                            android:textAllCaps="true" android:letterSpacing="0.08"
+                            android:layout_marginBottom="6dp"/>
+                        <Spinner android:id="@+id/spinnerFrom"
+                            android:layout_width="match_parent" android:layout_height="48dp"
+                            android:background="@drawable/spinner_bg"
+                            android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                    </LinearLayout>
+                    <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:orientation="vertical">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="To" android:textSize="11sp"
+                            android:textColor="@color/colorTextSecondary"
+                            android:textAllCaps="true" android:letterSpacing="0.08"
+                            android:layout_marginBottom="6dp"/>
+                        <Spinner android:id="@+id/spinnerTo"
+                            android:layout_width="match_parent" android:layout_height="48dp"
+                            android:background="@drawable/spinner_bg"
+                            android:paddingStart="10dp" android:paddingEnd="10dp"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Value" android:textSize="11sp"
+                    android:textColor="@color/colorTextSecondary"
+                    android:textAllCaps="true" android:letterSpacing="0.08"
+                    android:layout_marginBottom="6dp"/>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    app:boxStrokeColor="@color/colorTeal"
+                    app:hintTextColor="@color/colorTextSecondary"
+                    app:boxBackgroundColor="#0D00D4AA"
+                    android:hint="Enter value">
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/etValue"
+                        android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:textColor="@color/colorTextPrimary"
+                        android:inputType="numberDecimal" android:textSize="18sp"/>
+                </com.google.android.material.textfield.TextInputLayout>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <com.google.android.material.card.MaterialCardView
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp"
+            app:cardCornerRadius="20dp" app:cardElevation="0dp"
+            app:cardBackgroundColor="@color/colorCard"
+            app:strokeColor="@color/colorCardStroke" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="20dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:gravity="center_vertical"
+                    android:layout_marginBottom="12dp">
+                    <TextView android:layout_width="0dp" android:layout_height="wrap_content"
+                        android:layout_weight="1" android:text="Result" android:textSize="11sp"
+                        android:textColor="@color/colorTextSecondary"
+                        android:textAllCaps="true" android:letterSpacing="0.08"/>
+                    <TextView android:id="@+id/btnCopy"
+                        android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="📋 Copy" android:textSize="12sp"
+                        android:textColor="@color/colorTeal" android:textStyle="bold"
+                        android:clickable="true" android:focusable="true"/>
+                </LinearLayout>
+                <TextView android:id="@+id/tvResult"
+                    android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:text="—" android:textSize="18sp" android:textColor="@color/colorAmber"
+                    android:fontFamily="monospace" android:background="@drawable/result_box_bg"
+                    android:padding="16dp" android:minHeight="64dp" android:gravity="center"
+                    android:textIsSelectable="true"/>
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnClear"
+                style="@style/OutlineButton"
+                android:layout_width="0dp" android:layout_height="52dp"
+                android:layout_weight="1" android:layout_marginEnd="10dp"
+                android:text="Clear" android:textSize="14sp"/>
+            <com.google.android.material.button.MaterialButton android:id="@+id/btnCalculate"
+                style="@style/PrimaryButton"
+                android:layout_width="0dp" android:layout_height="52dp"
+                android:layout_weight="2" android:text="Convert" android:textSize="15sp"/>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

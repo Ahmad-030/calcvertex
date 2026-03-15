@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CalcVertex">
+
+        <activity
+            android:name=".activities.SplashActivity"
+            android:exported="true"
+            android:theme="@style/Theme.CalcVertex.Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity android:name=".activities.HomeActivity"           android:exported="false" />
+        <activity android:name=".activities.FinanceActivity"        android:exported="false" />
+        <activity android:name=".activities.HealthActivity"         android:exported="false" />
+        <activity android:name=".activities.MathActivity"           android:exported="false" />
+        <activity android:name=".activities.EverydayActivity"       android:exported="false" />
+        <activity android:name=".activities.HistoryActivity"        android:exported="false" />
+        <activity android:name=".activities.AboutActivity"          android:exported="false" />
+
+        <!-- Finance calcs -->
+        <activity android:name=".activities.EmiCalcActivity"        android:exported="false" />
+        <activity android:name=".activities.ProfitLossActivity"     android:exported="false" />
+        <activity android:name=".activities.GstCalcActivity"        android:exported="false" />
+        <activity android:name=".activities.InterestCalcActivity"   android:exported="false" />
+        <activity android:name=".activities.CurrencyCalcActivity"   android:exported="false" />
+
+        <!-- Health calcs -->
+        <activity android:name=".activities.BmiCalcActivity"        android:exported="false" />
+        <activity android:name=".activities.CalorieCalcActivity"    android:exported="false" />
+        <activity android:name=".activities.WaterCalcActivity"      android:exported="false" />
+
+        <!-- Math calcs -->
+        <activity android:name=".activities.AreaCalcActivity"       android:exported="false" />
+        <activity android:name=".activities.PercentCalcActivity"    android:exported="false" />
+        <activity android:name=".activities.BaseConverterActivity"  android:exported="false" />
+
+        <!-- Everyday calcs -->
+        <activity android:name=".activities.AgeCalcActivity"        android:exported="false" />
+        <activity android:name=".activities.DateDiffActivity"       android:exported="false" />
+        <activity android:name=".activities.UnitConverterActivity"  android:exported="false" />
+
+    </application>
+
+</manifest>

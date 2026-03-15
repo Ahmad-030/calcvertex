@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorBackground">
+
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <LinearLayout android:id="@+id/homeContainer"
+            android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:orientation="vertical" android:padding="20dp">
+
+            <!-- Header -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="@drawable/header_card_bg"
+                android:padding="24dp" android:layout_marginBottom="20dp">
+
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="CalcVertex 🔧"
+                    android:textSize="28sp" android:textStyle="bold"
+                    android:textColor="@color/colorTextPrimary"
+                    android:layout_marginBottom="6dp" />
+
+                <TextView android:id="@+id/tvCalcCount"
+                    android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="0 calculations in history"
+                    android:textSize="13sp" android:textColor="@color/colorTeal" />
+            </LinearLayout>
+
+            <!-- Category Cards Grid -->
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="14dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardFinance"
+                    android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:layout_marginEnd="7dp"
+                    android:clickable="true" android:focusable="true"
+                    app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                    app:cardBackgroundColor="#161F2E"
+                    app:strokeColor="#1E3050" app:strokeWidth="1dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="18dp" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="💰" android:textSize="32sp" android:layout_marginBottom="10dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Finance" android:textSize="14sp" android:textStyle="bold"
+                            android:textColor="#00D4AA" android:gravity="center"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="5 tools" android:textSize="11sp"
+                            android:textColor="@color/colorTextSecondary" android:layout_marginTop="3dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardHealth"
+                    android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:layout_marginStart="7dp"
+                    android:clickable="true" android:focusable="true"
+                    app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                    app:cardBackgroundColor="#161F2E"
+                    app:strokeColor="#1E3050" app:strokeWidth="1dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="18dp" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="❤️" android:textSize="32sp" android:layout_marginBottom="10dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Health" android:textSize="14sp" android:textStyle="bold"
+                            android:textColor="#FF6B6B" android:gravity="center"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="3 tools" android:textSize="11sp"
+                            android:textColor="@color/colorTextSecondary" android:layout_marginTop="3dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="14dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardMath"
+                    android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:layout_marginEnd="7dp"
+                    android:clickable="true" android:focusable="true"
+                    app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                    app:cardBackgroundColor="#161F2E"
+                    app:strokeColor="#1E3050" app:strokeWidth="1dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="18dp" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="📐" android:textSize="32sp" android:layout_marginBottom="10dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Math" android:textSize="14sp" android:textStyle="bold"
+                            android:textColor="#64B5F6" android:gravity="center"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="3 tools" android:textSize="11sp"
+                            android:textColor="@color/colorTextSecondary" android:layout_marginTop="3dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardEveryday"
+                    android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:layout_marginStart="7dp"
+                    android:clickable="true" android:focusable="true"
+                    app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                    app:cardBackgroundColor="#161F2E"
+                    app:strokeColor="#1E3050" app:strokeWidth="1dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="18dp" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="⚡" android:textSize="32sp" android:layout_marginBottom="10dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Everyday" android:textSize="14sp" android:textStyle="bold"
+                            android:textColor="#FFBE0B" android:gravity="center"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="3 tools" android:textSize="11sp"
+                            android:textColor="@color/colorTextSecondary" android:layout_marginTop="3dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:orientation="horizontal" android:layout_marginBottom="14dp">
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardHistory"
+                    android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:layout_marginEnd="7dp"
+                    android:clickable="true" android:focusable="true"
+                    app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                    app:cardBackgroundColor="#161F2E"
+                    app:strokeColor="#1E3050" app:strokeWidth="1dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="18dp" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="🕐" android:textSize="32sp" android:layout_marginBottom="10dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="History" android:textSize="14sp" android:textStyle="bold"
+                            android:textColor="@color/colorTextPrimary" android:gravity="center"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Last 20 calcs" android:textSize="11sp"
+                            android:textColor="@color/colorTextSecondary" android:layout_marginTop="3dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+
+                <com.google.android.material.card.MaterialCardView
+                    android:id="@+id/cardAbout"
+                    android:layout_width="0dp" android:layout_height="match_parent"
+                    android:layout_weight="1" android:layout_marginStart="7dp"
+                    android:clickable="true" android:focusable="true"
+                    app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                    app:cardBackgroundColor="#161F2E"
+                    app:strokeColor="#1E3050" app:strokeWidth="1dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="18dp" android:gravity="center">
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="ℹ️" android:textSize="32sp" android:layout_marginBottom="10dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="About" android:textSize="14sp" android:textStyle="bold"
+                            android:textColor="@color/colorTextPrimary" android:gravity="center"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="App info" android:textSize="11sp"
+                            android:textColor="@color/colorTextSecondary" android:layout_marginTop="3dp"/>
+                    </LinearLayout>
+                </com.google.android.material.card.MaterialCardView>
+            </LinearLayout>
+
+            <!-- Tip -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                app:cardCornerRadius="16dp" app:cardElevation="0dp"
+                app:cardBackgroundColor="#0D00D4AA"
+                app:strokeColor="#1A00D4AA" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="horizontal" android:padding="16dp" android:gravity="center_vertical">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="💡" android:textSize="18sp" android:layout_marginEnd="12dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="14 calculators · 100% offline · Last 20 results saved"
+                        android:textSize="12sp" android:textColor="@color/colorTeal"
+                        android:lineSpacingMultiplier="1.4"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <include layout="@layout/bottom_nav" />
+</LinearLayout>
