@@ -17,10 +17,7 @@ public class PercentCalcActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_spinner);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Percentage Calculator");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("Percentage Calculator");
         animateContainer(findViewById(R.id.calcContainer));
         setToolHeader("📊", "Percentage", AppConstants.COLOR_MATH);
         setLabel(R.id.tvSpinnerLabel, "Calculation Type");

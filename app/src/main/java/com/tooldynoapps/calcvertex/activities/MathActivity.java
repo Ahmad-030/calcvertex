@@ -14,10 +14,7 @@ public class MathActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category_hub);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Math & Science");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("Math & Science");
         animateContainer(findViewById(R.id.hubContainer));
         setupTools();
         setupBottomNav(3);

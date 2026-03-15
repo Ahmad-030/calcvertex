@@ -24,13 +24,9 @@ public class CalorieCalcActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_spinner);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Calorie Burn");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("Calorie Burn");
         animateContainer(findViewById(R.id.calcContainer));
         setToolHeader("🔥", "Calorie Burn", AppConstants.COLOR_HEALTH);
-
         setLabel(R.id.tvLabel1, "Weight (kg)");
         setLabel(R.id.tvLabel2, "Duration (minutes)");
         setLabel(R.id.tvSpinnerLabel, "Activity Type");

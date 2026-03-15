@@ -1,440 +1,201 @@
 <?xml version="1.0" encoding="utf-8"?>
-<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     android:background="@color/colorBackground">
 
-    <LinearLayout
-        android:id="@+id/privacyContainer"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:padding="20dp">
+    <include layout="@layout/toolbar" />
 
-        <!-- Header Card -->
-        <com.google.android.material.card.MaterialCardView
+    <ScrollView android:layout_width="match_parent" android:layout_height="0dp"
+        android:layout_weight="1">
+        <LinearLayout
+            android:id="@+id/privacyContainer"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="16dp"
-            app:cardCornerRadius="24dp"
-            app:cardElevation="0dp"
-            app:cardBackgroundColor="#0D1F35"
-            app:strokeColor="@color/colorCardStroke"
-            app:strokeWidth="1dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="28dp"
-                android:gravity="center">
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="🔒"
-                    android:textSize="56sp"
-                    android:layout_marginBottom="12dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="Privacy Policy"
-                    android:textSize="26sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorTextPrimary"
-                    android:letterSpacing="0.02"
-                    android:layout_marginBottom="6dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="CalcVertex · ToolDynoApps"
-                    android:textSize="12sp"
-                    android:textColor="@color/colorTeal"
-                    android:gravity="center"/>
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
+            android:orientation="vertical"
+            android:padding="20dp">
 
-        <!-- No Data Collection -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="0dp"
-            app:cardBackgroundColor="@color/colorCard"
-            app:strokeColor="@color/colorCardStroke"
-            app:strokeWidth="1dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginBottom="10dp">
-                    <TextView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:text="✅"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:layout_marginEnd="12dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No Data Collection"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
+            <!-- Header Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                app:cardCornerRadius="24dp" app:cardElevation="0dp"
+                app:cardBackgroundColor="#0D1F35"
+                app:strokeColor="@color/colorCardStroke" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="28dp" android:gravity="center">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="🔒" android:textSize="56sp" android:layout_marginBottom="12dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="Privacy Policy" android:textSize="26sp" android:textStyle="bold"
+                        android:textColor="@color/colorTextPrimary" android:letterSpacing="0.02"
+                        android:layout_marginBottom="6dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="CalcVertex · ToolDynoApps" android:textSize="12sp"
+                        android:textColor="@color/colorTeal" android:gravity="center"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- No Data Collection -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/colorCard"
+                app:strokeColor="@color/colorCardStroke" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="20dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView android:layout_width="32dp" android:layout_height="32dp"
+                            android:text="✅" android:textSize="18sp" android:gravity="center"
+                            android:layout_marginEnd="12dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="No Data Collection" android:textSize="15sp" android:textStyle="bold"
+                            android:textColor="@color/colorTeal"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="CalcVertex does not collect, store, transmit, or share any personal data. All calculations are performed locally on your device and never leave it."
+                        android:textSize="13sp" android:textColor="@color/colorTextSecondary"
+                        android:lineSpacingMultiplier="1.5"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Offline Use -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/colorCard"
+                app:strokeColor="@color/colorCardStroke" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="20dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView android:layout_width="32dp" android:layout_height="32dp"
+                            android:text="📴" android:textSize="18sp" android:gravity="center"
+                            android:layout_marginEnd="12dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="100% Offline" android:textSize="15sp" android:textStyle="bold"
+                            android:textColor="@color/colorTeal"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="This app works entirely offline. It does not require an internet connection and does not make any network requests at any time."
+                        android:textSize="13sp" android:textColor="@color/colorTextSecondary"
+                        android:lineSpacingMultiplier="1.5"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Local Storage -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/colorCard"
+                app:strokeColor="@color/colorCardStroke" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="20dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView android:layout_width="32dp" android:layout_height="32dp"
+                            android:text="💾" android:textSize="18sp" android:gravity="center"
+                            android:layout_marginEnd="12dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Local Storage Only" android:textSize="15sp" android:textStyle="bold"
+                            android:textColor="@color/colorTeal"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="Your last 20 calculation results are saved locally on your device using SharedPreferences. This data is only accessible within the app, is never uploaded anywhere, and is deleted when you uninstall the app or use the 'Clear All' option in History."
+                        android:textSize="13sp" android:textColor="@color/colorTextSecondary"
+                        android:lineSpacingMultiplier="1.5"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Permissions -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/colorCard"
+                app:strokeColor="@color/colorCardStroke" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="20dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView android:layout_width="32dp" android:layout_height="32dp"
+                            android:text="🔑" android:textSize="18sp" android:gravity="center"
+                            android:layout_marginEnd="12dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="No Special Permissions" android:textSize="15sp" android:textStyle="bold"
+                            android:textColor="@color/colorTeal"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="CalcVertex does not request access to your camera, microphone, contacts, location, or any other sensitive device permissions."
+                        android:textSize="13sp" android:textColor="@color/colorTextSecondary"
+                        android:lineSpacingMultiplier="1.5"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Third Party -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="12dp"
+                app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                app:cardBackgroundColor="@color/colorCard"
+                app:strokeColor="@color/colorCardStroke" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="20dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView android:layout_width="32dp" android:layout_height="32dp"
+                            android:text="🚫" android:textSize="18sp" android:gravity="center"
+                            android:layout_marginEnd="12dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="No Third-Party SDKs" android:textSize="15sp" android:textStyle="bold"
+                            android:textColor="@color/colorTeal"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:text="This app does not integrate any third-party analytics, advertising, tracking, or crash-reporting SDKs. There are no ads and no data is shared with any third party."
+                        android:textSize="13sp" android:textColor="@color/colorTextSecondary"
+                        android:lineSpacingMultiplier="1.5"/>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+
+            <!-- Contact Card -->
+            <com.google.android.material.card.MaterialCardView
+                android:layout_width="match_parent" android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                app:cardCornerRadius="20dp" app:cardElevation="0dp"
+                app:cardBackgroundColor="#0D00D4AA"
+                app:strokeColor="#1A00D4AA" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                    android:orientation="vertical" android:padding="20dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+                        android:orientation="horizontal" android:gravity="center_vertical"
+                        android:layout_marginBottom="10dp">
+                        <TextView android:layout_width="32dp" android:layout_height="32dp"
+                            android:text="📧" android:textSize="18sp" android:gravity="center"
+                            android:layout_marginEnd="12dp"/>
+                        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                            android:text="Contact Us" android:textSize="15sp" android:textStyle="bold"
+                            android:textColor="@color/colorTeal"/>
+                    </LinearLayout>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="ToolDynoApps" android:textSize="14sp" android:textStyle="bold"
+                        android:textColor="@color/colorTextPrimary" android:layout_marginBottom="2dp"/>
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                        android:text="exelsoftware@gmail.com" android:textSize="13sp"
                         android:textColor="@color/colorTeal"/>
                 </LinearLayout>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="CalcVertex does not collect, store, transmit, or share any personal data. All calculations are performed locally on your device and never leave it."
-                    android:textSize="13sp"
-                    android:textColor="@color/colorTextSecondary"
-                    android:lineSpacingMultiplier="1.5"/>
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
+            </com.google.android.material.card.MaterialCardView>
 
-        <!-- Offline Use -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="0dp"
-            app:cardBackgroundColor="@color/colorCard"
-            app:strokeColor="@color/colorCardStroke"
-            app:strokeWidth="1dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginBottom="10dp">
-                    <TextView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:text="📴"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:layout_marginEnd="12dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="100% Offline"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorTeal"/>
-                </LinearLayout>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="This app works entirely offline. It does not require an internet connection and does not make any network requests at any time."
-                    android:textSize="13sp"
-                    android:textColor="@color/colorTextSecondary"
-                    android:lineSpacingMultiplier="1.5"/>
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <!-- Local Storage -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="0dp"
-            app:cardBackgroundColor="@color/colorCard"
-            app:strokeColor="@color/colorCardStroke"
-            app:strokeWidth="1dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginBottom="10dp">
-                    <TextView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:text="💾"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:layout_marginEnd="12dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Local Storage Only"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorTeal"/>
-                </LinearLayout>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="Your last 20 calculation results are saved locally on your device using SharedPreferences. This data is only accessible within the app, is never uploaded anywhere, and is deleted when you uninstall the app or use the 'Clear All' option in History."
-                    android:textSize="13sp"
-                    android:textColor="@color/colorTextSecondary"
-                    android:lineSpacingMultiplier="1.5"/>
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <!-- Permissions -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="0dp"
-            app:cardBackgroundColor="@color/colorCard"
-            app:strokeColor="@color/colorCardStroke"
-            app:strokeWidth="1dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginBottom="10dp">
-                    <TextView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:text="🔑"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:layout_marginEnd="12dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No Special Permissions"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorTeal"/>
-                </LinearLayout>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="CalcVertex does not request access to your camera, microphone, contacts, location, or any other sensitive device permissions. The only system feature used is the clipboard, and only when you tap the Copy button."
-                    android:textSize="13sp"
-                    android:textColor="@color/colorTextSecondary"
-                    android:lineSpacingMultiplier="1.5"/>
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <!-- Third Party -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="0dp"
-            app:cardBackgroundColor="@color/colorCard"
-            app:strokeColor="@color/colorCardStroke"
-            app:strokeWidth="1dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginBottom="10dp">
-                    <TextView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:text="🚫"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:layout_marginEnd="12dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="No Third-Party SDKs"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorTeal"/>
-                </LinearLayout>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="This app does not integrate any third-party analytics, advertising, tracking, or crash-reporting SDKs. There are no ads and no data is shared with any third party."
-                    android:textSize="13sp"
-                    android:textColor="@color/colorTextSecondary"
-                    android:lineSpacingMultiplier="1.5"/>
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <!-- Children -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="0dp"
-            app:cardBackgroundColor="@color/colorCard"
-            app:strokeColor="@color/colorCardStroke"
-            app:strokeWidth="1dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginBottom="10dp">
-                    <TextView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:text="👶"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:layout_marginEnd="12dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Children's Privacy"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorTeal"/>
-                </LinearLayout>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="CalcVertex is safe for all ages. Since we do not collect any personal information from any users, there are no specific concerns regarding children's privacy."
-                    android:textSize="13sp"
-                    android:textColor="@color/colorTextSecondary"
-                    android:lineSpacingMultiplier="1.5"/>
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <!-- Changes -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="12dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="0dp"
-            app:cardBackgroundColor="@color/colorCard"
-            app:strokeColor="@color/colorCardStroke"
-            app:strokeWidth="1dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginBottom="10dp">
-                    <TextView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:text="📝"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:layout_marginEnd="12dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Changes to This Policy"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorTeal"/>
-                </LinearLayout>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="We may update this Privacy Policy from time to time. Any changes will be reflected in an updated version of the app. Continued use of the app after changes constitutes your acceptance of the updated policy."
-                    android:textSize="13sp"
-                    android:textColor="@color/colorTextSecondary"
-                    android:lineSpacingMultiplier="1.5"/>
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-        <!-- Contact Card -->
-        <com.google.android.material.card.MaterialCardView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="8dp"
-            app:cardCornerRadius="20dp"
-            app:cardElevation="0dp"
-            app:cardBackgroundColor="#0D00D4AA"
-            app:strokeColor="#1A00D4AA"
-            app:strokeWidth="1dp">
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="vertical"
-                android:padding="20dp">
-                <LinearLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:orientation="horizontal"
-                    android:gravity="center_vertical"
-                    android:layout_marginBottom="10dp">
-                    <TextView
-                        android:layout_width="32dp"
-                        android:layout_height="32dp"
-                        android:text="📧"
-                        android:textSize="18sp"
-                        android:gravity="center"
-                        android:layout_marginEnd="12dp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Contact Us"
-                        android:textSize="15sp"
-                        android:textStyle="bold"
-                        android:textColor="@color/colorTeal"/>
-                </LinearLayout>
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:text="If you have any questions or concerns about this Privacy Policy, please contact us:"
-                    android:textSize="13sp"
-                    android:textColor="@color/colorTextSecondary"
-                    android:lineSpacingMultiplier="1.5"
-                    android:layout_marginBottom="8dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="ToolDynoApps"
-                    android:textSize="14sp"
-                    android:textStyle="bold"
-                    android:textColor="@color/colorTextPrimary"
-                    android:layout_marginBottom="2dp"/>
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="exelsoftware@gmail.com"
-                    android:textSize="13sp"
-                    android:textColor="@color/colorTeal"/>
-            </LinearLayout>
-        </com.google.android.material.card.MaterialCardView>
-
-    </LinearLayout>
-</ScrollView>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

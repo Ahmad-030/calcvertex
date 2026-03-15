@@ -16,13 +16,9 @@ public class EmiCalcActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_generic);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("EMI Calculator");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("EMI Calculator");
         animateContainer(findViewById(R.id.calcContainer));
 
-        // Customise labels
         setLabel(R.id.tvLabel1, "Principal Amount (PKR)");
         setLabel(R.id.tvLabel2, "Annual Interest Rate (%)");
         setLabel(R.id.tvLabel3, "Tenure (Months)");
@@ -36,9 +32,8 @@ public class EmiCalcActivity extends BaseCalcActivity {
         TextInputEditText et2 = findViewById(R.id.etInput2);
         TextInputEditText et3 = findViewById(R.id.etInput3);
         TextView tvResult     = findViewById(R.id.tvResult);
-        MaterialButton btnCalc = findViewById(R.id.btnCalculate);
+        MaterialButton btnCalc  = findViewById(R.id.btnCalculate);
         MaterialButton btnClear = findViewById(R.id.btnClear);
-
         setupCopyButton(findViewById(R.id.btnCopy), tvResult);
 
         btnCalc.setOnClickListener(v -> {

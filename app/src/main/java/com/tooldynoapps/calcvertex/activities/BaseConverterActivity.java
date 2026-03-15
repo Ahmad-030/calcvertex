@@ -17,10 +17,7 @@ public class BaseConverterActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_spinner);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Number Base Converter");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("Number Base Converter");
         animateContainer(findViewById(R.id.calcContainer));
         setToolHeader("🔢", "Base Converter", AppConstants.COLOR_MATH);
         setLabel(R.id.tvSpinnerLabel, "Convert FROM");

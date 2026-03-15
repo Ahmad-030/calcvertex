@@ -15,10 +15,7 @@ public class ProfitLossActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_generic);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Profit & Loss");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("Profit & Loss");
         animateContainer(findViewById(R.id.calcContainer));
         setLabel(R.id.tvLabel1, "Cost Price (PKR)");
         setLabel(R.id.tvLabel2, "Selling Price (PKR)");

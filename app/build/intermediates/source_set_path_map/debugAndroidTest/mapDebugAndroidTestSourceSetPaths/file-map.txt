@@ -1,0 +1,5 @@
+com.tooldynoapps.calcvertex.test.app-jetified-core-1.6.1-0 C:\Users\amtal\.gradle\caches\8.9\transforms\1bd81392f9f5838fe705e7731d1ad245\transformed\jetified-core-1.6.1\res
+com.tooldynoapps.calcvertex.test.app-androidTest-1 D:\CalcVertex\app\build\generated\res\resValues\androidTest\debug
+com.tooldynoapps.calcvertex.test.app-mergeDebugAndroidTestResources-2 D:\CalcVertex\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\merged.dir
+com.tooldynoapps.calcvertex.test.app-mergeDebugAndroidTestResources-3 D:\CalcVertex\app\build\intermediates\incremental\debugAndroidTest\mergeDebugAndroidTestResources\stripped.dir
+com.tooldynoapps.calcvertex.test.app-debugAndroidTest-4 D:\CalcVertex\app\build\intermediates\merged_res\debugAndroidTest\mergeDebugAndroidTestResources

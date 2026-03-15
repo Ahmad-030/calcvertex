@@ -23,10 +23,7 @@ public class DateDiffActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_date);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Date Difference");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("Date Difference");
         animateContainer(findViewById(R.id.calcContainer));
         setToolHeader("📅", "Date Difference", AppConstants.COLOR_EVERYDAY);
         setDateLabel(R.id.tvDateLabel1, "Start Date");

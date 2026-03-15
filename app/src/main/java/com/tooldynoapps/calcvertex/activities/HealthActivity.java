@@ -14,10 +14,7 @@ public class HealthActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category_hub);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Health");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("Health");
         animateContainer(findViewById(R.id.hubContainer));
         setupTools();
         setupBottomNav(2);

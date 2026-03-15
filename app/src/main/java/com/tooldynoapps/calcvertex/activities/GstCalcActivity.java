@@ -15,10 +15,7 @@ public class GstCalcActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_generic);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("GST / Tax Calculator");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("GST / Tax Calculator");
         animateContainer(findViewById(R.id.calcContainer));
         setLabel(R.id.tvLabel1, "Original Amount (PKR)");
         setLabel(R.id.tvLabel2, "GST / Tax Rate (%)");

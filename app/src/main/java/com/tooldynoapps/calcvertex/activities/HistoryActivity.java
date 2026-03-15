@@ -24,10 +24,7 @@ public class HistoryActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_history);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("History");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("History");
 
         recyclerView = findViewById(R.id.recyclerView);
         tvEmpty      = findViewById(R.id.tvEmpty);

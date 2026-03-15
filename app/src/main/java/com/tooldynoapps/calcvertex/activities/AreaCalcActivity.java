@@ -17,10 +17,7 @@ public class AreaCalcActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_spinner);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Area & Volume");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("Area & Volume");
         animateContainer(findViewById(R.id.calcContainer));
         setToolHeader("📐", "Area & Volume", AppConstants.COLOR_MATH);
         setLabel(R.id.tvSpinnerLabel, "Shape");

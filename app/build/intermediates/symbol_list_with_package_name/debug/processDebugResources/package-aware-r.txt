@@ -3342,6 +3342,7 @@ id etValue
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id fab
 id fade
 id fill
 id fill_horizontal
@@ -3368,6 +3369,7 @@ id graph_wrap
 id group_divider
 id grouping
 id groups
+id headerCard
 id header_title
 id hide_ime_id
 id hideable
@@ -3523,6 +3525,7 @@ id path
 id pathRelative
 id peekHeight
 id percent
+id pieSection
 id pin
 id position
 id postLayout
@@ -3532,7 +3535,9 @@ id progress_circular
 id progress_horizontal
 id radio
 id ratio
+id recentSection
 id rectangles
+id recyclerTransactions
 id recyclerView
 id report_drawn
 id reverseSawtooth
@@ -3649,6 +3654,9 @@ id tool4
 id tool5
 id tool6
 id toolIconContainer
+id toolbar
+id toolbarBack
+id toolbarTitle
 id top
 id topPanel
 id touch_outside
@@ -3664,6 +3672,7 @@ id transition_scene_layoutid_cache
 id transition_transform
 id triangle
 id tvAppName
+id tvBalance
 id tvCalcCount
 id tvCalcEmoji
 id tvCalcTitle
@@ -3674,7 +3683,10 @@ id tvDate2
 id tvDateLabel1
 id tvDateLabel2
 id tvEmpty
+id tvExpense
+id tvGreeting
 id tvHeroIcon
+id tvIncome
 id tvInput
 id tvLabel1
 id tvLabel2
@@ -3834,6 +3846,7 @@ layout activity_calc_spinner
 layout activity_category_hub
 layout activity_history
 layout activity_home
+layout activity_main
 layout activity_privacy_policy
 layout activity_splash
 layout activity_unit_converter
@@ -3918,6 +3931,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout toolbar
 mipmap ic_launcher
 mipmap ic_launcher_foreground
 mipmap ic_launcher_round
@@ -4376,8 +4390,6 @@ style Base_Widget_MaterialComponents_Snackbar
 style Base_Widget_MaterialComponents_TextInputEditText
 style Base_Widget_MaterialComponents_TextInputLayout
 style Base_Widget_MaterialComponents_TextView
-style CalcVertexActionBar
-style CalcVertexActionBarTitle
 style CardView
 style CardView_Dark
 style CardView_Light

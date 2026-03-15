@@ -14,7 +14,6 @@ public class HomeActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        if (getSupportActionBar() != null) getSupportActionBar().hide();
 
         animateChildren();
         setupCategoryCards();

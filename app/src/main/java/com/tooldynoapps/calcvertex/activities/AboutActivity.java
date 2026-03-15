@@ -12,10 +12,7 @@ public class AboutActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("About");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("About");
         LinearLayout container = findViewById(R.id.aboutContainer);
         animateContainer(container);
 

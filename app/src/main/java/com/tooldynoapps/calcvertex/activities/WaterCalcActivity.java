@@ -17,10 +17,7 @@ public class WaterCalcActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_spinner);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Water Intake");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("Water Intake");
         animateContainer(findViewById(R.id.calcContainer));
         setToolHeader("💧", "Water Intake", AppConstants.COLOR_HEALTH);
         setLabel(R.id.tvLabel1, "Weight (kg)");

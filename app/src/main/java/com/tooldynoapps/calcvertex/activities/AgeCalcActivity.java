@@ -19,10 +19,7 @@ public class AgeCalcActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_date);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Age Calculator");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("Age Calculator");
         animateContainer(findViewById(R.id.calcContainer));
         setToolHeader("🎂", "Age Calculator", AppConstants.COLOR_EVERYDAY);
 

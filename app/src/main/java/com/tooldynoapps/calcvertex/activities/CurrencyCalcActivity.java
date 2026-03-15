@@ -15,10 +15,7 @@ public class CurrencyCalcActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_generic);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Currency Converter");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("Currency Converter");
         animateContainer(findViewById(R.id.calcContainer));
         setLabel(R.id.tvLabel1, "Amount");
         setLabel(R.id.tvLabel2, "Exchange Rate (1 unit = ?)");

@@ -10,10 +10,7 @@ public class FinanceActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_category_hub);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Finance");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("Finance");
         animateContainer(findViewById(R.id.hubContainer));
         setupTools();
         setupBottomNav(1);

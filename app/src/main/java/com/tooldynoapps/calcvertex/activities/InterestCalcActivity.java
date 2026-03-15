@@ -15,10 +15,7 @@ public class InterestCalcActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_calc_generic);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Interest Calculator");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("Interest Calculator");
         animateContainer(findViewById(R.id.calcContainer));
         setLabel(R.id.tvLabel1, "Principal (PKR)");
         setLabel(R.id.tvLabel2, "Annual Rate (%)");

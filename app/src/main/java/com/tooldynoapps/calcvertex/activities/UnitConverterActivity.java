@@ -15,9 +15,9 @@ import com.google.android.material.textfield.TextInputEditText;
 public class UnitConverterActivity extends BaseCalcActivity {
 
     private static final String[][] UNITS = {
-        {"m", "km", "cm", "mm", "mi", "ft", "in"},   // Length
-        {"kg", "g", "lb", "oz"},                       // Weight
-        {"C", "F", "K"}                                // Temperature
+        {"m", "km", "cm", "mm", "mi", "ft", "in"},
+        {"kg", "g", "lb", "oz"},
+        {"C", "F", "K"}
     };
     private static final String[] CATEGORIES = {"Length", "Weight", "Temperature"};
 
@@ -25,10 +25,7 @@ public class UnitConverterActivity extends BaseCalcActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_unit_converter);
-        if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle("Unit Converter");
-            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        }
+        setupToolbar("Unit Converter");
         animateContainer(findViewById(R.id.calcContainer));
         setToolHeader("📏", "Unit Converter", AppConstants.COLOR_EVERYDAY);
 
